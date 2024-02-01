@@ -1,0 +1,145 @@
+:root {
+  --gradient: linear-gradient(
+    to right,
+    #fdebf7,
+    #b689c0,
+    #947ec3,
+    #7858a6,
+    #5b4b8a,
+    #371b58,
+    #2e0249
+  );
+  /*fonts */
+  --fs-title: 5em;
+  --fs-title-phone: 3em;
+  --fw-title: 100;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* mobile */
+@media only screen and (min-device-width: 480px) {
+  h2,
+  h3 {
+    font-size: var(--fs-title-phone);
+    letter-spacing: 10px;
+  }
+}
+
+body {
+  background: #222;
+  color: antiquewhite;
+  line-height: 1.6;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/* starry background */
+#stars {
+  background: url(./night_sky.png) repeat top center fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: 1;
+}
+
+/* text */
+h2,
+h3 {
+  font-family: "Jolly Lodger", cursive;
+  letter-spacing: 15px;
+  font-size: var(--fs-title);
+  text-align: center;
+  font-weight: var(--fw-title);
+}
+h2 {
+  margin-top: 5rem;
+}
+
+h3 {
+  position: relative;
+  margin-top: 1rem;
+}
+
+/* animation for text above */
+h3::before,
+h3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+h3::before {
+  background: #222;
+  animation: typewriter 2s steps(21) 1s forwards;
+}
+
+h3::after {
+  width: 0.125em;
+  background: none;
+  animation: typewriter 2s steps(21) forwards;
+}
+
+/* animation of prediction, typing effect */
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+/* position of elements */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* submit button magic ball */
+#generate {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    #b689c0,
+    #947ec3,
+    #7858a6,
+    #5b4b8a,
+    #371b58
+  );
+  border: none;
+  margin-top: 2.5rem;
+  box-shadow: 0 0 10px 15px #c996cc inset;
+  background-size: 200%;
+  animation: bg-animation 20s infinite;
+}
+
+/* animation of background */
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
