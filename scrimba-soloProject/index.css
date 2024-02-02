@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+  gap: 15em;
+}
+
+.home,
+.guest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8em;
+  height: 15em;
+
+  border: 8px solid #fff;
+  border-radius: 5px;
+  background-color: rgb(2, 5, 32);
+}
+
+h1 {
+  font-size: 35px;
+  margin-top: -3em;
+}
+
+.monitor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 3px;
+  width: 12em;
+  height: 12em;
+  margin: 1em 1em;
+  background: white;
+}
+
+h2 {
+  font-size: 100px;
+  color: #041014;
+  font-family: "Nova Square", cursive;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  margin: 0.5em 0.5em;
+
+  font-family: "Nova Square", cursive;
+  font-size: 20px;
+  font-weight: 900;
+
+  cursor: pointer;
+}
+
+.resetHome,
+.resetGuest {
+  width: 100px;
+  height: 50px;
+  margin-top: 1em;
+  background: rgb(239, 65, 65);
+  border-radius: 5px;
+
+  font-family: "Nova Square", cursive;
+  font-weight: 900;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.highlight {
+  color: green;
+}

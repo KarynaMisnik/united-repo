@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <!-- google font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nova+Square&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="home">
+            <h1>HOME</h1>
+            <div class="monitor monitorOne">
+                <h2 id="HomeResult">0</h2>
+            </div>
+            <div class="btn-group">
+                <button onclick="homePlusOne()" id="btn btn-one">+1</button>
+                <button onclick="homePlusTwo()" id="btn btn-two">+2</button>
+                <button onclick="homePlusThree()" id="btn btn-three">+3</button>
+            </div>
+            <button class="resetHome" onclick="resetHomeScore()">RESET</button>
+
+        </div>
+        <div class="guest">
+            <h1>GUEST</h1>
+            <div class="monitor monitorTwo">
+                <h2 id="GuestResult">0</h2>
+            </div>
+            <div class="btn-group">
+                <button onclick="guestPlusOne()" id="btn btn-one">+1</button>
+                <button onclick="guestPlusTwo()" id="btn btn-two">+2</button>
+                <button onclick="guestPlusThree()" id="btn btn-three">+3</button>
+            </div>
+            <button class="resetGuest" onclick="resetGuestScore()">RESET</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
