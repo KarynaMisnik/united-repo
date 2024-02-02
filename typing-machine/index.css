@@ -1,0 +1,32 @@
+:root {
+  --bg-color: rgb(248, 233, 164);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color);
+}
+
+h1 {
+  font-family: "Special Elite", cursive;
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  /* function fixes value between upper and lower border. */
+  position: relative;
+  outline: 3px solid rgb(248, 233, 164);
+  width: max-content;
+  margin-left: 1em;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
