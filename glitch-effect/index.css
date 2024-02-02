@@ -1,0 +1,60 @@
+:root {
+  --bg-clr: rgb(34, 34, 34, 1);
+  --font-clr: rgb(252, 254, 255, 1);
+  --shadow-clr1: rgba(219, 13, 47, 0.75);
+  --shadow-clr2: rgba(9, 98, 82, 0.552);
+  --shadow-clr3: rgba(45, 230, 187, 0.788);
+}
+
+body {
+  background: var(--bg-clr);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-clr);
+  font-family: sans-serif;
+}
+
+.text {
+  font-size: 5rem;
+  font-weight: 600;
+  text-shadow: 0.05em 0 0 var(--shadow-clr1),
+    -0.025em -0.05em 0 var(--shadow-clr2), 0.025em 0.05em 0 var(--shadow-clr3); /*em shrinks or becomes smaller along with font-size rem */
+
+  animation: text 1600ms infinite;
+}
+
+@keyframes text {
+  /*rules of animation */
+  0% {
+    text-shadow: 0.05em 0 0 var(--shadow-clr1),
+      -0.05em -0.025em 0 var(--shadow-clr2),
+      -0.025em 0.05em 0 var(--shadow-clr3);
+  }
+  14% {
+    text-shadow: 0.025em 0 0 var(--shadow-clr1),
+      -0.025em -0.05em 0 var(--shadow-clr2),
+      -0.05em 0.025em 0 var(--shadow-clr3);
+  }
+  15% {
+    text-shadow: -0.05em -0.025 0 var(--shadow-clr1),
+      0.025em 0.025em 0 var(--shadow-clr2), -0.05em -0.05em 0 var(--shadow-clr3);
+  }
+  49% {
+    text-shadow: 0.05em 0 0 var(--shadow-clr1),
+      0.025em 0.025em 0 var(--shadow-clr2), -0.05em -0.05em 0 var(--shadow-clr3);
+  }
+  50% {
+    text-shadow: -0.025em -0.05em 0 var(--shadow-clr1),
+      0.05em 0.05em 0 var(--shadow-clr2), -0.01em -0.01em 0 var(--shadow-clr3);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 var(--shadow-clr1),
+      0.05em 0 0 var(--shadow-clr2), 0em -0.025em 0 var(--shadow-clr3);
+  }
+  100% {
+    text-shadow: -0.05em 0 0 var(--shadow-clr1),
+      -0.05em -0.01em 0 var(--shadow-clr2), 0.05em 0.025em 0 var(--shadow-clr3);
+  }
+}
