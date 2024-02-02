@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d5b1ff;
+  background-blend-mode: multiply;
+  background-image: url("bg.png");
+  background-size: cover;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  min-width: 450px;
+  min-height: 650px;
+  background: #fffac8;
+  border-radius: 5px;
+  border: 3px solid #5b189c;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#category {
+  padding: 8px;
+  width: 360px;
+  border: 2px solid #5b189c;
+  border-radius: 5px;
+}
+
+#count-el {
+  margin: 10px 10px;
+  font-family: "Nova Square", cursive;
+}
+
+#save-el {
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#increment-btn {
+  background: #5b189c;
+}
+
+#save-btn {
+  background: #165343;
+}

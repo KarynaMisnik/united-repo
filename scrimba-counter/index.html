@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>Counter</h1>
+            <div class="counter-category">
+                <input type="text" id="category" placeholder="What are you going count today?" />
+            </div>
+            <h2 id="count-el">0</h2>
+            <button id="increment-btn" onclick="increment()">INCREMENT</button>
+            <button id="save-btn" onclick="save()">SAVE</button>
+            <p id="save-el">Previous entries of: </p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
