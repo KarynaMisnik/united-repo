@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  background: #040f13;
+}
+
+h1 {
+  color: #fafbfa;
+  font-family: "Abril Fatface", cursive;
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+span {
+  color: #06aa51;
+  font-family: "Abril Fatface", cursive;
+}
+
+p {
+  color: #89928d;
+  font-family: "Abril Fatface", cursive;
+  margin: 10px 10px;
+  font-size: 25px;
+}
+
+button {
+  margin: 20px 20px;
+  padding: 1em;
+  font-family: "Abril Fatface", cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid #fafbfa;
+  background: #06aa51;
+  color: #fafbfa;
+}
+
+input {
+  padding: 1em;
+  color: #06aa51;
+  background: #c0c2c0;
+  border-radius: 5px;
+}
+
+p {
+  color: #fafbfa;
+}
