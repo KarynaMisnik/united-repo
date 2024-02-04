@@ -1,3 +1,3 @@
 # united-repo
 
-Old small projects are put in one repo. 
+Old small projects are in one repo now. 
